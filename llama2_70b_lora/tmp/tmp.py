@@ -1,12 +1,8 @@
+from datasets import load_dataset
+from transformers import AutoTokenizer
 from functools import partial
 from itertools import chain
-
-import torch
-from datasets import load_dataset
-from peft import LoraConfig, get_peft_model
-from peft.tuners.lora import LoraLayer
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
+seq_len = 8192
 
 def group_texts(examples, block_size):
     # Concatenate all texts.
@@ -24,13 +20,12 @@ def group_texts(examples, block_size):
         result["labels"] = result["input_ids"].copy()
     return result
 
-
-def create_datasets(tokenizer, args):
+def create_datasets(tokenizer):
     dataset = load_dataset(
-        args.dataset_name,
-        args.dataset_config_name,
+        "tau/scrolls",
+        "gov_report",
         use_auth_token=True,
-        num_proc=args.num_workers,
+        num_proc=8,
     )
     train_dataset = dataset["train"]
     valid_dataset = dataset["validation"]
@@ -40,7 +35,7 @@ def create_datasets(tokenizer, args):
         output_texts = []
         mask_labels_sizes = []
         for i in range(len(example["input"])):
-            if "gov_report" in args.dataset_config_name:
+            if "gov_report" in "gov_report":
                 output_texts.append(
                     f"### Summarize the following text:\n {example['input'][i]}\n ### Summary:\n {example['output'][i]}{tokenizer.eos_token}"
                 )
@@ -83,7 +78,7 @@ def create_datasets(tokenizer, args):
     def filter_function(example):
         to_keep = []
         for i in range(len(example["input_ids"])):
-            if len(example["input_ids"][i]) > args.max_seq_length:
+            if len(example["input_ids"][i]) > seq_len:
                 to_keep.append(False)
             else:
                 to_keep.append(True)
@@ -107,7 +102,7 @@ def create_datasets(tokenizer, args):
         f"Before packing, Size of the train set: {len(train_dataset)}. Size of the validation set: {len(valid_dataset)}"
     )
 
-    packing_method = partial(group_texts, block_size=args.max_seq_length)
+    packing_method = partial(group_texts, block_size=seq_len)
     # Packing
     train_dataset = train_dataset.map(
         packing_method,
@@ -126,55 +121,7 @@ def create_datasets(tokenizer, args):
 
     return train_dataset, valid_dataset
 
-
-def create_and_prepare_model(args):
-    device_map = None
-
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model_path,
-        device_map=device_map,
-        use_cache=not args.use_gradient_checkpointing,
-        trust_remote_code=True,
-        # attn_implementation="flash_attention_2",
-        attn_implementation="eager",
-        torch_dtype=torch.bfloat16,
-        max_position_embeddings=8192,
-    )
-
-    peft_config = None
-    if args.use_peft_lora:
-        peft_config = LoraConfig(
-            lora_alpha=args.lora_alpha,
-            lora_dropout=args.lora_dropout,
-            r=args.lora_r,
-            bias="none",
-            task_type="CAUSAL_LM",
-            target_modules=(
-                None
-                if args.lora_target_modules is None
-                else args.lora_target_modules.split(",")
-            ),
-        )
-        if args.use_gradient_checkpointing:
-            model.gradient_checkpointing_enable()
-        model = get_peft_model(model, peft_config)
-        model.print_trainable_parameters()
-
-    # return model
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
-    tokenizer.pad_token = tokenizer.eos_token
-
-    return model, peft_config, tokenizer
-
-
-def peft_module_casting_to_bf16(model, args):
-    for name, module in model.named_modules():
-        if isinstance(module, LoraLayer):
-            if args.bf16:
-                module = module.to(torch.bfloat16)
-        if "norm" in name:
-            module = module.to(torch.float32)
-        if any(x in name for x in ["lm_head", "embed_tokens", "wte", "wpe"]):
-            if hasattr(module, "weight"):
-                if args.bf16 and module.weight.dtype == torch.float32:
-                    module = module.to(torch.bfloat16)
+model_path = "/scratch/users/maliangl/Llama-2-7b-hf"
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+tokenizer.pad_token = tokenizer.eos_token
+train_dataset, valid_dataset = create_datasets(tokenizer)

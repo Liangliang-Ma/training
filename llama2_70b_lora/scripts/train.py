@@ -19,7 +19,23 @@ from typing import Optional
 from datasets import load_dataset
 from mlperf_logging_utils import LoraLogger, MLPerfCallback
 from transformers import HfArgumentParser, Trainer, TrainingArguments
-from utils import create_and_prepare_model, peft_module_casting_to_bf16
+from utils import create_and_prepare_model, create_datasets, peft_module_casting_to_bf16
+
+import deepspeed
+from deepspeed.accelerator import get_accelerator
+import os 
+
+# distributed setup
+local_rank = int(os.getenv("LOCAL_RANK", "0"))
+world_size = int(os.getenv("WORLD_SIZE", "1"))
+
+os.environ['CCL_PROCESS_LAUNCHER'] = 'none'
+os.environ['CCL_LOCAL_SIZE'] = str(world_size)
+os.environ['CCL_LOCAL_RANK'] = str(local_rank)
+
+get_accelerator().set_device(local_rank)
+deepspeed.init_distributed()
+device = get_accelerator().current_device_name()
 
 
 @dataclass
@@ -38,8 +54,8 @@ class ScriptArguments:
     max_grad_norm: Optional[float] = field(default=0.0)
     weight_decay: Optional[float] = field(default=0.001)
     lora_alpha: Optional[int] = field(default=32)
-    lora_dropout: Optional[float] = field(default=0.1, metadata={"lora dropout is a fixed to 0.1 in closed submission"})
-    lora_r: Optional[int] = field(default=16, metadata={"lora rank is a fixed to 16 in closed submission"})
+    lora_dropout: Optional[float] = field(default=0.1)
+    lora_r: Optional[int] = field(default=16)
     lora_target_modules: Optional[str] = field(
         default=None,
         metadata={
@@ -51,9 +67,9 @@ class ScriptArguments:
         default="./llama-v2-fused-qkv",
         metadata={"help": "Path to the model directory."},
     )
-    dataset_path: Optional[str] = field(
-        default="./dataset.npy",
-        metadata={"help": "The path to the downloaded dataset."},
+    dataset_name: Optional[str] = field(
+        default="tau/scrolls",
+        metadata={"help": "The preference dataset to use."},
     )
     config_path: Optional[str] = field(
         default="./configs/default_config.yaml",
@@ -150,7 +166,7 @@ def main(args):
         warmup_ratio=args.warmup_ratio,
         lr_scheduler_type=args.lr_scheduler_type,
         num_train_epochs=args.num_train_epochs,
-        evaluation_strategy="steps",
+        evaluation_strategy="no",
         save_strategy="no",
         max_steps=args.max_steps,
         eval_steps=args.eval_steps,
@@ -161,9 +177,10 @@ def main(args):
         hub_model_id=args.hub_model_id,
         report_to="tensorboard",
         seed=args.seed,
+        deepspeed="ds_config.json"
     )
 
-    model = create_and_prepare_model(args)
+    model, peft_config, tokenizer = create_and_prepare_model(args)
     model.config.use_cache = False
 
     # datasets
@@ -171,14 +188,16 @@ def main(args):
     # train_url = "https://drive.google.com/file/d/1-JgY1mEafcJ7qhggt6UR3OEKAciIPd5s/view?usp=sharing"
     # eval_url =  "https://drive.google.com/file/d/1jrm6Lacrq49AYv0uB_Qy22xRmfPixQvs/view?usp=sharing"
     # dataset = load_dataset("parquet", data_files={'train': train_url, 'validation': eval_url})
-    dataset = load_dataset(
-        "parquet",
-        data_files={
-            "train": f"{args.dataset_path}/train-00000-of-00001.parquet",
-            "validation": f"{args.dataset_path}/validation-00000-of-00001.parquet",
-        },
-    )
-    train_dataset, eval_dataset = dataset["train"], dataset["validation"]
+    # dataset = load_dataset(
+    #     "parquet",
+    #     data_files={
+    #         "train": f"{args.dataset_path}/train-00000-of-00001.parquet",
+    #         "validation": f"{args.dataset_path}/validation-00000-of-00001.parquet",
+    #     },
+    # )
+     # datasets
+    train_dataset, eval_dataset = create_datasets(tokenizer, args)
+    # train_dataset, eval_dataset = dataset["train"], dataset["validation"]
 
     trainer = Trainer(
         model=model,
@@ -193,7 +212,7 @@ def main(args):
 
     if args.use_peft_lora:
         peft_module_casting_to_bf16(trainer.model, args)
-
+    print("prepare all done!")
     trainer.train()
 
 

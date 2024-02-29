@@ -134,7 +134,7 @@ class MLPerfCallback(TrainerCallback):
         self.mllogger.event(key=constants.OPT_LR_WARMUP_FACTOR, value=args.warmup_ratio)
         self.mllogger.event(key=constants.OPT_LR_TRAINING_STEPS, value=args.max_steps)
         self.mllogger.event(key=constants.OPT_BASE_LR, value=args.learning_rate)
-        self.mllogger.event(key=constants.LORA_ALPHA, value=args.lora_alpha)
+        # self.mllogger.event(key=constants.LORA_ALPHA, value=args.lora_alpha)
         self.mllogger.event(key=constants.GRADIENT_ACCUMULATION_STEPS, value=args.gradient_accumulation_steps)
         self.mllogger.start(constants.RUN_START, value="")
 

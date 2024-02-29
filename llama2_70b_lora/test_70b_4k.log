@@ -1,0 +1,465 @@
+[2024-02-28 21:07:40,283] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+could not open any host key
+ssh_keysign: no reply
+sign using hostkey ssh-ed25519 SHA256:6xbdrz3RD40tvVFSOsx8HIEpPPrScb4sXN+ffa80bjA failed
+[2024-02-28 21:07:41,949] [INFO] [runner.py:463:main] Using IP address of 172.16.1.41 for node compute41
+[2024-02-28 21:07:41,951] [INFO] [runner.py:568:main] cmd = mpirun -n 8 -ppn 8 -hostfile hostfile_mpich -genv PYTHONSTARTUP=/etc/pythonstart -genv PYTHONPATH=/home/maliangl/ft/reference/llama2_70b_lora -genv MASTER_ADDR 172.16.1.41 -genv MASTER_PORT 29500 -genv WORLD_SIZE 8 -genv LOCAL_SIZE 8 -hosts compute41 /home/maliangl/miniconda3/envs/ft/bin/python -u /home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/deepspeed/launcher/launcher_helper.py --launcher mpich scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+My guessed rank = 5
+My guessed rank = 6
+My guessed rank = 7
+My guessed rank = 4
+My guessed rank = 0
+My guessed rank = 1
+My guessed rank = 2
+My guessed rank = 3
+[2024-02-28 21:07:47,088] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,292] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,303] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,308] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,314] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,325] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,326] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,331] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:47,480] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,539] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,552] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,557] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,563] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,572] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,574] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-28 21:07:47,579] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+My guessed rank = 4
+My guessed rank = 5
+My guessed rank = 6
+My guessed rank = 7
+My guessed rank = 0
+My guessed rank = 1
+My guessed rank = 2
+My guessed rank = 3
+[2024-02-28 21:07:53,456] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,456] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,467] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,469] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,469] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,469] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,482] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:53,482] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-28 21:07:54,350] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,350] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,350] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend ccl
+[2024-02-28 21:07:54,365] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,365] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,368] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,368] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,378] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,379] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,380] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,380] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,380] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,380] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,381] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,381] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:07:54,395] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-28 21:07:54,395] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-28 21:08:03,533] [INFO] [partition_parameters.py:343:__exit__] finished initializing model - num_params = 723, num_elems = 68.98B
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.58s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.59s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:42, 11.60s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:23<02:31, 11.64s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:34<02:19, 11.61s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:47<02:14, 12.20s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.79s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.79s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.79s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.80s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.79s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.80s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.80s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:59<01:57, 11.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:10<01:45, 11.74s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.65s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:22<01:33, 11.66s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.56s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.56s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.56s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.56s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.57s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.56s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:20, 11.57s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:33<01:21, 11.57s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.36s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.36s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:44<01:08, 11.36s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:57<00:58, 11.76s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:08<00:47, 11.79s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.67s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:20<00:35, 11.68s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.58s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.59s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:31<00:23, 11.58s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.42s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.43s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.43s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:42<00:11, 11.43s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.18s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00,  8.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:43<00:00, 10.90s/it]
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Size of the train set: 753. Size of the validation set: 26
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): LlamaForCausalLM(
+      (model): LlamaModel(
+        (embed_tokens): Embedding(32000, 8192, padding_idx=0)
+        (layers): ModuleList(
+          (0-79): 80 x LlamaDecoderLayer(
+            (self_attn): LlamaAttention(
+              (q_proj): Linear(in_features=8192, out_features=8192, bias=False)
+              (k_proj): Linear(in_features=8192, out_features=1024, bias=False)
+              (v_proj): Linear(in_features=8192, out_features=1024, bias=False)
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=8192, out_features=8192, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=8192, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=8192, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): LlamaRotaryEmbedding()
+            )
+            (mlp): LlamaMLP(
+              (gate_proj): Linear(in_features=8192, out_features=28672, bias=False)
+              (up_proj): Linear(in_features=8192, out_features=28672, bias=False)
+              (down_proj): Linear(in_features=28672, out_features=8192, bias=False)
+              (act_fn): SiLU()
+            )
+            (input_layernorm): LlamaRMSNorm()
+            (post_attention_layernorm): LlamaRMSNorm()
+          )
+        )
+        (norm): LlamaRMSNorm()
+      )
+      (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+    )
+  )
+)
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+Parameter Offload: Total persistent parameters: 1318912 in 161 params
+:::MLLOG {"namespace": "", "time_ms": 1709183451673, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 753, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 26, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451676, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+  0%|          | 0/800 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|          | 1/800 [00:41<9:11:43, 41.43s/it]  0%|          | 2/800 [01:08<7:19:27, 33.04s/it]                                                 {'loss': 1.3945, 'learning_rate': 0.0004999922894111975, 'epoch': 0.02}
+  0%|          | 2/800 [01:08<7:19:27, 33.04s/it]:::MLLOG {"namespace": "", "time_ms": 1709183520297, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3945, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+  0%|          | 3/800 [01:35<6:43:45, 30.40s/it]                                                 {'loss': 1.2844, 'learning_rate': 0.0004999826512866693, 'epoch': 0.03}
+  0%|          | 3/800 [01:35<6:43:45, 30.40s/it]  0%|          | 4/800 [02:03<6:26:54, 29.16s/it]                                                 {'loss': 1.2937, 'learning_rate': 0.0004999691581204152, 'epoch': 0.04}
+  0%|          | 4/800 [02:03<6:26:54, 29.16s/it]:::MLLOG {"namespace": "", "time_ms": 1709183574814, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2937, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+  1%|          | 5/800 [02:30<6:17:24, 28.48s/it]                                                 {'loss': 1.3765, 'learning_rate': 0.0004999518101205162, 'epoch': 0.05}
+  1%|          | 5/800 [02:30<6:17:24, 28.48s/it]  1%|          | 6/800 [02:57<6:11:30, 28.07s/it]                                                 {'loss': 1.2968, 'learning_rate': 0.0004999306075545002, 'epoch': 0.06}
+  1%|          | 6/800 [02:57<6:11:30, 28.07s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.75s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.70s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A                                                 
+                                             [A{'eval_loss': 0.9546487331390381, 'eval_runtime': 37.7954, 'eval_samples_per_second': 0.688, 'eval_steps_per_second': 0.106, 'epoch': 0.06}
+  1%|          | 6/800 [03:35<6:11:30, 28.07s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709183667188, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183667190, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9546487331390381, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183667191, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+  1%|          | 7/800 [04:02<8:51:00, 40.18s/it]                                                 {'loss': 1.3611, 'learning_rate': 0.0004999055507493368, 'epoch': 0.07}
+  1%|          | 7/800 [04:02<8:51:00, 40.18s/it]  1%|          | 8/800 [04:30<7:56:09, 36.07s/it]                                                 {'loss': 1.2715, 'learning_rate': 0.0004998766400914329, 'epoch': 0.08}
+  1%|          | 8/800 [04:30<7:56:09, 36.07s/it]:::MLLOG {"namespace": "", "time_ms": 1709183721752, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2715, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 8}}
+  1%|          | 9/800 [04:57<7:19:18, 33.32s/it]                                                 {'loss': 1.241, 'learning_rate': 0.0004998438760266267, 'epoch': 0.09}
+  1%|          | 9/800 [04:57<7:19:18, 33.32s/it]  1%|▏         | 10/800 [05:24<6:54:05, 31.45s/it]                                                  {'loss': 1.2391, 'learning_rate': 0.0004998072590601808, 'epoch': 0.11}
+  1%|▏         | 10/800 [05:24<6:54:05, 31.45s/it]:::MLLOG {"namespace": "", "time_ms": 1709183776280, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2391, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 10}}
+  1%|▏         | 11/800 [05:51<6:36:41, 30.17s/it]                                                  {'loss': 1.2913, 'learning_rate': 0.0004997667897567738, 'epoch': 0.12}
+  1%|▏         | 11/800 [05:51<6:36:41, 30.17s/it]  2%|▏         | 12/800 [06:19<6:24:30, 29.28s/it]                                                  {'loss': 1.4477, 'learning_rate': 0.0004997224687404926, 'epoch': 0.13}
+  2%|▏         | 12/800 [06:19<6:24:30, 29.28s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.72s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.69s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A                                                  
+                                             [A{'eval_loss': 0.9542876482009888, 'eval_runtime': 37.788, 'eval_samples_per_second': 0.688, 'eval_steps_per_second': 0.106, 'epoch': 0.13}
+  2%|▏         | 12/800 [06:56<6:24:30, 29.28s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709183868597, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709183868599, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9542876482009888, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709183868599, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 12}}
+  2%|▏         | 13/800 [07:24<8:46:17, 40.12s/it]                                                  {'loss': 1.3642, 'learning_rate': 0.0004996742966948219, 'epoch': 0.14}
+  2%|▏         | 13/800 [07:24<8:46:17, 40.12s/it]  2%|▏         | 14/800 [07:51<7:54:49, 36.25s/it]                                                  {'loss': 1.2371, 'learning_rate': 0.0004996222743626345, 'epoch': 0.15}
+  2%|▏         | 14/800 [07:51<7:54:49, 36.25s/it]:::MLLOG {"namespace": "", "time_ms": 1709183923153, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2371, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 14}}
+  2%|▏         | 15/800 [08:18<7:18:49, 33.54s/it]                                                  {'loss': 1.3748, 'learning_rate': 0.000499566402546179, 'epoch': 0.16}
+  2%|▏         | 15/800 [08:18<7:18:49, 33.54s/it]  2%|▏         | 16/800 [08:46<6:53:38, 31.66s/it]                                                  {'loss': 1.4009, 'learning_rate': 0.0004995066821070679, 'epoch': 0.17}
+  2%|▏         | 16/800 [08:46<6:53:38, 31.66s/it]:::MLLOG {"namespace": "", "time_ms": 1709183977701, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.4009, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 16}}
+  2%|▏         | 17/800 [09:13<6:35:58, 30.34s/it]                                                  {'loss': 1.1869, 'learning_rate': 0.0004994431139662643, 'epoch': 0.18}
+  2%|▏         | 17/800 [09:13<6:35:58, 30.34s/it]  2%|▏         | 18/800 [09:40<6:23:28, 29.42s/it]                                                  {'loss': 1.2963, 'learning_rate': 0.0004993756991040675, 'epoch': 0.19}
+  2%|▏         | 18/800 [09:40<6:23:28, 29.42s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.73s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.70s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A
+                                             [A                                                  {'eval_loss': 0.9362075328826904, 'eval_runtime': 37.8255, 'eval_samples_per_second': 0.687, 'eval_steps_per_second': 0.106, 'epoch': 0.19}
+
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A  2%|▏         | 18/800 [10:18<6:23:28, 29.42s/it]
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709184070114, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709184070115, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9362075328826904, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709184070115, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 18}}
+  2%|▏         | 19/800 [10:45<8:42:40, 40.15s/it]                                                  {'loss': 1.2463, 'learning_rate': 0.0004993044385600982, 'epoch': 0.2}
+  2%|▏         | 19/800 [10:45<8:42:40, 40.15s/it]  2%|▎         | 20/800 [11:13<7:51:47, 36.29s/it]                                                  {'loss': 1.3838, 'learning_rate': 0.000499229333433282, 'epoch': 0.21}
+  2%|▎         | 20/800 [11:13<7:51:47, 36.29s/it]:::MLLOG {"namespace": "", "time_ms": 1709184124709, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3838, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 20}}
+  3%|▎         | 21/800 [11:40<7:16:05, 33.59s/it]                                                  {'loss': 1.3122, 'learning_rate': 0.000499150384881833, 'epoch': 0.22}
+  3%|▎         | 21/800 [11:40<7:16:05, 33.59s/it]  3%|▎         | 22/800 [12:07<6:50:55, 31.69s/it]                                                  {'loss': 1.2427, 'learning_rate': 0.0004990675941232354, 'epoch': 0.23}
+  3%|▎         | 22/800 [12:07<6:50:55, 31.69s/it]:::MLLOG {"namespace": "", "time_ms": 1709184179262, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2427, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 22}}
+  3%|▎         | 23/800 [12:34<6:33:16, 30.37s/it]                                                  {'loss': 1.1916, 'learning_rate': 0.0004989809624342251, 'epoch': 0.24}
+  3%|▎         | 23/800 [12:34<6:33:16, 30.37s/it]  3%|▎         | 24/800 [13:02<6:20:45, 29.44s/it]                                                  {'loss': 1.199, 'learning_rate': 0.00049889049115077, 'epoch': 0.25}
+  3%|▎         | 24/800 [13:02<6:20:45, 29.44s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.73s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.69s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A                                                  
+                                             [A{'eval_loss': 0.9337575435638428, 'eval_runtime': 37.7951, 'eval_samples_per_second': 0.688, 'eval_steps_per_second': 0.106, 'epoch': 0.25}
+  3%|▎         | 24/800 [13:39<6:20:45, 29.44s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709184271630, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1709184271631, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9337575435638428, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1709184271631, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 24}}
+  3%|▎         | 25/800 [14:07<8:38:21, 40.13s/it]                                                  {'loss': 1.3075, 'learning_rate': 0.0004987961816680492, 'epoch': 0.26}
+  3%|▎         | 25/800 [14:07<8:38:21, 40.13s/it]  3%|▎         | 26/800 [14:34<7:47:57, 36.28s/it]                                                  {'loss': 1.3742, 'learning_rate': 0.0004986980354404316, 'epoch': 0.27}
+  3%|▎         | 26/800 [14:34<7:47:57, 36.28s/it]:::MLLOG {"namespace": "", "time_ms": 1709184326177, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3742, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 26}}
+  3%|▎         | 27/800 [15:01<7:12:33, 33.58s/it]                                                  {'loss': 1.2362, 'learning_rate': 0.0004985960539814534, 'epoch': 0.28}
+  3%|▎         | 27/800 [15:01<7:12:33, 33.58s/it]  4%|▎         | 28/800 [15:29<6:47:42, 31.69s/it]                                                  {'loss': 1.3252, 'learning_rate': 0.0004984902388637949, 'epoch': 0.29}
+  4%|▎         | 28/800 [15:29<6:47:42, 31.69s/it]:::MLLOG {"namespace": "", "time_ms": 1709184380737, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3252, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 28}}
+  4%|▎         | 29/800 [15:56<6:30:17, 30.37s/it]                                                  {'loss': 1.17, 'learning_rate': 0.000498380591719256, 'epoch': 0.31}
+  4%|▎         | 29/800 [15:56<6:30:17, 30.37s/it]  4%|▍         | 30/800 [16:23<6:17:53, 29.45s/it]                                                  {'loss': 1.2497, 'learning_rate': 0.0004982671142387316, 'epoch': 0.32}
+  4%|▍         | 30/800 [16:23<6:17:53, 29.45s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.73s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.70s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A                                                  
+                                             [A{'eval_loss': 0.9294610619544983, 'eval_runtime': 37.8235, 'eval_samples_per_second': 0.687, 'eval_steps_per_second': 0.106, 'epoch': 0.32}
+  4%|▍         | 30/800 [17:01<6:17:53, 29.45s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709184473167, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1709184473170, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9294610619544983, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1709184473170, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 30}}
+  4%|▍         | 31/800 [17:28<8:34:34, 40.15s/it]                                                  {'loss': 1.2715, 'learning_rate': 0.0004981498081721845, 'epoch': 0.33}
+  4%|▍         | 31/800 [17:28<8:34:34, 40.15s/it]  4%|▍         | 32/800 [17:56<7:44:38, 36.30s/it]                                                  {'loss': 1.2872, 'learning_rate': 0.0004980286753286195, 'epoch': 0.34}
+  4%|▍         | 32/800 [17:56<7:44:38, 36.30s/it]:::MLLOG {"namespace": "", "time_ms": 1709184527766, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2872, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 32}}
+  4%|▍         | 33/800 [18:23<7:09:34, 33.60s/it]                                                  {'loss': 1.2862, 'learning_rate': 0.0004979037175760548, 'epoch': 0.35}
+  4%|▍         | 33/800 [18:23<7:09:34, 33.60s/it]  4%|▍         | 34/800 [18:50<6:44:53, 31.72s/it]                                                  {'loss': 1.3503, 'learning_rate': 0.0004977749368414937, 'epoch': 0.36}
+  4%|▍         | 34/800 [18:50<6:44:53, 31.72s/it]:::MLLOG {"namespace": "", "time_ms": 1709184582388, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3503, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 34}}
+  4%|▍         | 35/800 [19:18<6:27:34, 30.40s/it]                                                  {'loss': 1.2938, 'learning_rate': 0.0004976423351108943, 'epoch': 0.37}
+  4%|▍         | 35/800 [19:18<6:27:34, 30.40s/it]  4%|▍         | 36/800 [19:45<6:15:15, 29.47s/it]                                                  {'loss': 1.2952, 'learning_rate': 0.0004975059144291394, 'epoch': 0.38}
+  4%|▍         | 36/800 [19:45<6:15:15, 29.47s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.73s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.70s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A                                                  
+                                             [A{'eval_loss': 0.9294806718826294, 'eval_runtime': 37.8333, 'eval_samples_per_second': 0.687, 'eval_steps_per_second': 0.106, 'epoch': 0.38}
+  4%|▍         | 36/800 [20:23<6:15:15, 29.47s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709184674865, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1709184674866, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9294806718826294, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1709184674866, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 36}}
+  5%|▍         | 37/800 [20:50<8:30:50, 40.17s/it]                                                  {'loss': 1.2704, 'learning_rate': 0.0004973656769000046, 'epoch': 0.39}
+  5%|▍         | 37/800 [20:50<8:30:50, 40.17s/it]  5%|▍         | 38/800 [21:17<7:40:58, 36.30s/it]                                                  {'loss': 1.2985, 'learning_rate': 0.0004972216246861262, 'epoch': 0.4}
+  5%|▍         | 38/800 [21:17<7:40:58, 36.30s/it]:::MLLOG {"namespace": "", "time_ms": 1709184729413, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2985, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 38}}
+  5%|▍         | 39/800 [21:44<7:05:58, 33.59s/it]                                                  {'loss': 1.2477, 'learning_rate': 0.0004970737600089673, 'epoch': 0.41}
+  5%|▍         | 39/800 [21:44<7:05:58, 33.59s/it]  5%|▌         | 40/800 [22:12<6:41:26, 31.69s/it]                                                  {'loss': 1.2966, 'learning_rate': 0.0004969220851487844, 'epoch': 0.42}
+  5%|▌         | 40/800 [22:12<6:41:26, 31.69s/it]:::MLLOG {"namespace": "", "time_ms": 1709184783952, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2966, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 40}}
+  5%|▌         | 41/800 [22:39<6:24:05, 30.36s/it]                                                  {'loss': 1.2128, 'learning_rate': 0.0004967666024445913, 'epoch': 0.43}
+  5%|▌         | 41/800 [22:39<6:24:05, 30.36s/it]  5%|▌         | 42/800 [23:06<6:11:52, 29.44s/it]                                                  {'loss': 1.3912, 'learning_rate': 0.0004966073142941239, 'epoch': 0.44}
+  5%|▌         | 42/800 [23:06<6:11:52, 29.44s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.72s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.69s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A                                                  
+                                             [A{'eval_loss': 0.9259760975837708, 'eval_runtime': 37.7886, 'eval_samples_per_second': 0.688, 'eval_steps_per_second': 0.106, 'epoch': 0.44}
+  5%|▌         | 42/800 [23:44<6:11:52, 29.44s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.72s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709184876292, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1709184876295, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9259760975837708, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1709184876295, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 42}}
+  5%|▌         | 43/800 [24:11<8:26:23, 40.14s/it]                                                  {'loss': 1.3331, 'learning_rate': 0.0004964442231538023, 'epoch': 0.45}
+  5%|▌         | 43/800 [24:11<8:26:23, 40.14s/it]  6%|▌         | 44/800 [24:39<7:37:09, 36.28s/it]                                                  {'loss': 1.3351, 'learning_rate': 0.0004962773315386935, 'epoch': 0.46}
+  6%|▌         | 44/800 [24:39<7:37:09, 36.28s/it]:::MLLOG {"namespace": "", "time_ms": 1709184930874, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3351, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 44}}
+  6%|▌         | 45/800 [25:06<7:02:38, 33.59s/it]                                                  {'loss': 1.2279, 'learning_rate': 0.0004961066420224729, 'epoch': 0.47}
+  6%|▌         | 45/800 [25:06<7:02:38, 33.59s/it]  6%|▌         | 46/800 [25:33<6:38:25, 31.70s/it]                                                  {'loss': 1.2997, 'learning_rate': 0.000495932157237384, 'epoch': 0.48}
+  6%|▌         | 46/800 [25:33<6:38:25, 31.70s/it]:::MLLOG {"namespace": "", "time_ms": 1709184985488, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2997, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 46}}
+  6%|▌         | 47/800 [26:01<6:21:19, 30.38s/it]                                                  {'loss': 1.2395, 'learning_rate': 0.000495753879874198, 'epoch': 0.49}
+  6%|▌         | 47/800 [26:01<6:21:19, 30.38s/it]  6%|▌         | 48/800 [26:28<6:09:19, 29.47s/it]                                                  {'loss': 1.3211, 'learning_rate': 0.0004955718126821722, 'epoch': 0.51}
+  6%|▌         | 48/800 [26:28<6:09:19, 29.47s/it]
+  0%|          | 0/4 [00:00<?, ?it/s][A
+ 50%|█████     | 2/4 [00:09<00:09,  4.73s/it][A
+ 75%|███████▌  | 3/4 [00:18<00:06,  6.71s/it][A
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A                                                  
+                                             [A{'eval_loss': 0.9232650995254517, 'eval_runtime': 37.8586, 'eval_samples_per_second': 0.687, 'eval_steps_per_second': 0.106, 'epoch': 0.51}
+  6%|▌         | 48/800 [27:06<6:09:19, 29.47s/it]
+100%|██████████| 4/4 [00:28<00:00,  7.73s/it][A
+                                             [A:::MLLOG {"namespace": "", "time_ms": 1709185077994, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077995, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9232650995254517, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077995, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077996, "event_type": "INTERVAL_END", "key": "run_stop", "value": 0.9232650995254517, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 186, "step_num": 48, "status": "success"}}
+  6%|▌         | 49/800 [27:33<8:22:55, 40.18s/it]                                                  {'loss': 1.2863, 'learning_rate': 0.0004953859584690081, 'epoch': 0.52}
+  6%|▌         | 49/800 [27:33<8:22:55, 40.18s/it]                                                  {'train_runtime': 1653.6287, 'train_samples_per_second': 3.87, 'train_steps_per_second': 0.484, 'train_loss': 1.2966257406740773, 'epoch': 0.52}
+  6%|▌         | 49/800 [27:33<8:22:55, 40.18s/it]  6%|▌         | 49/800 [27:33<7:02:24, 33.75s/it]
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 134460 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 134461 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 134462 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 134463 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 134464 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 134465 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 134466 RUNNING AT compute41
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================

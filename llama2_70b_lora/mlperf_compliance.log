@@ -1,0 +1,229 @@
+:::MLLOG {"namespace": "", "time_ms": 1709181096271, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 3901, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 173, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709181096273, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255831, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255832, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 3901, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 173, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709181255833, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709181294767, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 4.5377, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709181320751, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 4.2868, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709181441495, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709181441497, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 3.62605357170105, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709181441497, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709181467553, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 3.9151, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1709181493613, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 3.638, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1709181614345, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709181614348, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 3.2356317043304443, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709181614348, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709181640419, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 3.4488, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1709181666499, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 3.3679, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895342, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 3901, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 173, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895344, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895345, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709181895345, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709181933931, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 4.5372, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709181959971, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 4.29, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404209, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404210, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404210, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404210, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404210, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404210, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 3901, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 173, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709182404211, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782736, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782737, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 753, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 26, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709182782738, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709182851147, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3945, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709182905317, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2937, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709182997183, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709182997185, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9537011384963989, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709182997185, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183051406, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2713, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451673, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 753, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 26, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451675, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709183451676, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709183520297, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3945, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709183574814, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2937, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709183667188, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183667190, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9546487331390381, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183667191, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709183721752, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2715, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1709183776280, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2391, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1709183868597, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709183868599, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9542876482009888, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709183868599, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709183923153, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2371, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1709183977701, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.4009, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1709184070114, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709184070115, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9362075328826904, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709184070115, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709184124709, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3838, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1709184179262, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2427, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1709184271630, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1709184271631, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9337575435638428, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1709184271631, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 24}}
+:::MLLOG {"namespace": "", "time_ms": 1709184326177, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3742, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 26}}
+:::MLLOG {"namespace": "", "time_ms": 1709184380737, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3252, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 28}}
+:::MLLOG {"namespace": "", "time_ms": 1709184473167, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1709184473170, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9294610619544983, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1709184473170, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 30}}
+:::MLLOG {"namespace": "", "time_ms": 1709184527766, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2872, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 32}}
+:::MLLOG {"namespace": "", "time_ms": 1709184582388, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3503, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 34}}
+:::MLLOG {"namespace": "", "time_ms": 1709184674865, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1709184674866, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9294806718826294, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1709184674866, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 36}}
+:::MLLOG {"namespace": "", "time_ms": 1709184729413, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2985, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 38}}
+:::MLLOG {"namespace": "", "time_ms": 1709184783952, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2966, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 40}}
+:::MLLOG {"namespace": "", "time_ms": 1709184876292, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1709184876295, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9259760975837708, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1709184876295, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 42}}
+:::MLLOG {"namespace": "", "time_ms": 1709184930874, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.3351, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 44}}
+:::MLLOG {"namespace": "", "time_ms": 1709184985488, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2997, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 46}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077994, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077995, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.9232650995254517, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077995, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 48}}
+:::MLLOG {"namespace": "", "time_ms": 1709185077996, "event_type": "INTERVAL_END", "key": "run_stop", "value": 0.9232650995254517, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 186, "step_num": 48, "status": "success"}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419951, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419952, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 46, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 2, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709185419953, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709185459831, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2133, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709185485231, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2687, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709185515688, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709185515689, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.4329220950603485, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709185515689, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709185515689, "event_type": "INTERVAL_END", "key": "run_stop", "value": 0.4329220950603485, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 186, "step_num": 6, "status": "success"}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347663, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347664, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347664, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 46, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 2, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709188347665, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709188388559, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2133, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709188414607, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2685, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709188445812, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709188445812, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.4326048493385315, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709188445812, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709188445812, "event_type": "INTERVAL_END", "key": "run_stop", "value": 0.4326048493385315, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 186, "step_num": 6, "status": "success"}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789341, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "llama2_70b_lora", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 92}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789342, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "Closed", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 96}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789342, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 100}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789342, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 103}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789342, "event_type": "POINT_IN_TIME", "key": "submission_poc_name", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 107}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789342, "event_type": "POINT_IN_TIME", "key": "submission_poc_email", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 111}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "referece", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 115}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": "8", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 119}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 46, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 125}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 2, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 129}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "seed", "value": 666, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 133}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.0, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 134}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_training_steps", "value": 800, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 135}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.0005, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 136}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "POINT_IN_TIME", "key": "gradient_accumulation_steps", "value": 1, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 138}}
+:::MLLOG {"namespace": "", "time_ms": 1709191789343, "event_type": "INTERVAL_START", "key": "run_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 139}}
+:::MLLOG {"namespace": "", "time_ms": 1709191830422, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2135, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 2}}
+:::MLLOG {"namespace": "", "time_ms": 1709191856458, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2684, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 4}}
+:::MLLOG {"namespace": "", "time_ms": 1709191882560, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2095, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 6}}
+:::MLLOG {"namespace": "", "time_ms": 1709191908715, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.1693, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 8}}
+:::MLLOG {"namespace": "", "time_ms": 1709191934874, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.2721, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 10}}
+:::MLLOG {"namespace": "", "time_ms": 1709191961028, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.1381, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 12}}
+:::MLLOG {"namespace": "", "time_ms": 1709191987191, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.1394, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 14}}
+:::MLLOG {"namespace": "", "time_ms": 1709192013350, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.1598, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 16}}
+:::MLLOG {"namespace": "", "time_ms": 1709192039546, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.0821, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 18}}
+:::MLLOG {"namespace": "", "time_ms": 1709192065708, "event_type": "POINT_IN_TIME", "key": "train_loss", "value": 1.057, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 157, "step_num": 20}}
+:::MLLOG {"namespace": "", "time_ms": 1709192097031, "event_type": "INTERVAL_END", "key": "block_stop", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 165, "step_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1709192097031, "event_type": "POINT_IN_TIME", "key": "eval_loss", "value": 0.4212236702442169, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 170, "step_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1709192097031, "event_type": "INTERVAL_START", "key": "block_start", "value": "", "metadata": {"file": "mlperf_logging_utils.py", "lineno": 175, "step_num": 22}}
+:::MLLOG {"namespace": "", "time_ms": 1709192097031, "event_type": "INTERVAL_END", "key": "run_stop", "value": 0.4212236702442169, "metadata": {"file": "mlperf_logging_utils.py", "lineno": 186, "step_num": 22, "status": "success"}}

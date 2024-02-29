@@ -1,16 +1,14 @@
-accelerate launch --config_file configs/default_config.yaml scripts/train.py \
---model_name meta-llama/Llama-2-70b-hf \
---dataset_path "./dataset" \
---model_path "./llama-v2-fused-qkv" \
---max_seq_len 8192 \
+deepspeed --force_multi --hostfile hostfile_deepspeed --launcher=MPICH --launcher_args='-hostfile hostfile_mpich' scripts/train.py \
+--model_path /scratch/users/maliangl/Llama-2-70b-hf \
+--dataset_name "tau/scrolls" --dataset_config_name "gov_report" \
+--max_seq_len 2048 \
 --bf16 True \
 --logging_steps 2 \
 --eval_steps 6 \
 --save_steps 999 \
---output_dir "./results/llama-70b_scrolls_gov_report_r16_$1" \
+--output_dir "./results/llama-70b_scrolls_gov_report_r16_666" \
 --per_device_train_batch_size 1 \
 --gradient_accumulation_steps 1 \
---dataset_text_field "input" \
 --lr_scheduler_type "cosine" \
 --learning_rate 5e-4 \
 --warmup_ratio 0 \
@@ -21,6 +19,9 @@ accelerate launch --config_file configs/default_config.yaml scripts/train.py \
 --lora_alpha 16 \
 --lora_dropout 0.1 \
 --max_steps 800 \
---use_flash_attn \
---seed "$1" \
---lora_target_modules "qkv_proj,o_proj"
+--seed 666 \
+--lora_target_modules "qkv_proj,o_proj" 2>&1 | tee test_70b_2k.log
+
+# --dataset_text_field "input" \
+# --max_seq_len 8192 \
+# --use_flash_attn \
