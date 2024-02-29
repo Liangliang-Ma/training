@@ -204,7 +204,7 @@ def main(args):
         args=training_arguments,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset))],
+        # callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset))],
     )
     trainer.accelerator.print(f"{trainer.model}")
     if args.use_peft_lora:
