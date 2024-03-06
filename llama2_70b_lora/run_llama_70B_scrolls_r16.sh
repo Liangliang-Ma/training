@@ -3,9 +3,8 @@ deepspeed --force_multi --hostfile hostfile_deepspeed --launcher=MPICH --launche
 --dataset_name "tau/scrolls" --dataset_config_name "gov_report" \
 --max_seq_len 2048 \
 --bf16 True \
---logging_steps 2 \
---eval_steps 6 \
---save_steps 999 \
+--logging_steps 32 \
+--eval_steps 64 \
 --output_dir "./results/llama-70b_scrolls_gov_report_r16_666" \
 --per_device_train_batch_size 1 \
 --gradient_accumulation_steps 1 \
@@ -20,7 +19,7 @@ deepspeed --force_multi --hostfile hostfile_deepspeed --launcher=MPICH --launche
 --lora_dropout 0.1 \
 --max_steps 800 \
 --seed 666 \
---lora_target_modules "qkv_proj,o_proj" 2>&1 | tee test_70b_2k.log
+--lora_target_modules "qkv_proj,o_proj" 2>&1 | tee test.log
 
 # --dataset_text_field "input" \
 # --max_seq_len 8192 \

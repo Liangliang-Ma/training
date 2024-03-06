@@ -1,0 +1,363 @@
+[2024-02-29 00:34:11,656] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+could not open any host key
+ssh_keysign: no reply
+sign using hostkey ssh-ed25519 SHA256:6xbdrz3RD40tvVFSOsx8HIEpPPrScb4sXN+ffa80bjA failed
+[2024-02-29 00:34:13,429] [INFO] [runner.py:463:main] Using IP address of 172.16.1.41 for node compute41
+[2024-02-29 00:34:13,432] [INFO] [runner.py:568:main] cmd = mpirun -n 8 -ppn 8 -hostfile hostfile_mpich -genv PYTHONSTARTUP=/etc/pythonstart -genv PYTHONPATH=/home/maliangl/ft/reference/llama2_70b_lora -genv MASTER_ADDR 172.16.1.41 -genv MASTER_PORT 29500 -genv WORLD_SIZE 8 -genv LOCAL_SIZE 8 -hosts compute41 /home/maliangl/miniconda3/envs/ft/bin/python -u /home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/deepspeed/launcher/launcher_helper.py --launcher mpich scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+My guessed rank = 7
+My guessed rank = 6
+My guessed rank = 5
+My guessed rank = 4
+My guessed rank = 0
+My guessed rank = 1
+My guessed rank = 2
+My guessed rank = 3
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,515] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+[2024-02-29 00:34:18,959] [INFO] [launcher_helper.py:101:main] launcher_helper cmd = /home/maliangl/miniconda3/envs/ft/bin/python -u scripts/train.py --model_path /scratch/users/maliangl/Llama-2-70b-hf --dataset_name tau/scrolls --dataset_config_name gov_report --max_seq_len 4096 --bf16 True --logging_steps 2 --eval_steps 6 --save_steps 999 --output_dir ./results/llama-70b_scrolls_gov_report_r16_666 --per_device_train_batch_size 1 --gradient_accumulation_steps 1 --lr_scheduler_type cosine --learning_rate 5e-4 --warmup_ratio 0 --use_gradient_checkpointing True --target_eval_loss 0.925 --use_peft_lora True --lora_r 16 --lora_alpha 16 --lora_dropout 0.1 --max_steps 800 --seed 666 --lora_target_modules qkv_proj,o_proj
+My guessed rank = 4
+My guessed rank = 5
+My guessed rank = 1
+My guessed rank = 7
+My guessed rank = 2
+My guessed rank = 0
+My guessed rank = 3
+My guessed rank = 6
+[2024-02-29 00:34:24,457] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,457] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,457] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,464] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,465] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,465] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,465] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:24,469] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to xpu (auto detect)
+[2024-02-29 00:34:25,199] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,199] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,208] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,208] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,216] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,216] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,216] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend ccl
+[2024-02-29 00:34:25,219] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,219] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,219] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,219] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,231] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,232] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,235] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,235] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:25,239] [INFO] [comm.py:161:init_deepspeed_backend] Initialize ccl backend
+[2024-02-29 00:34:25,239] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-02-29 00:34:35,137] [INFO] [partition_parameters.py:343:__exit__] finished initializing model - num_params = 723, num_elems = 68.98B
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:10<02:33, 10.99s/it]Loading checkpoint shards:   7%|▋         | 1/15 [00:11<02:34, 11.01s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.72s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:21<02:19, 10.73s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.70s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:32<02:08, 10.71s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.22s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.22s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.23s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.22s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.23s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.23s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.23s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:44<02:03, 11.23s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.97s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.98s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:54<01:49, 10.98s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.79s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.79s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  40%|████      | 6/15 [01:05<01:37, 10.80s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [01:15<01:25, 10.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:29<01:21, 11.70s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.27s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.28s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:39<01:07, 11.28s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.13s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.14s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:50<00:55, 11.13s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [02:02<00:45, 11.32s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  80%|████████  | 12/15 [02:14<00:34, 11.52s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.39s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.39s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.39s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.39s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.40s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.40s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.40s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [02:25<00:22, 11.39s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.01s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.01s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.01s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.01s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.02s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.02s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.02s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [02:35<00:11, 11.02s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.89s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00,  7.90s/it]Loading checkpoint shards: 100%|██████████| 15/15 [02:36<00:00, 10.42s/it]
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:2508: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/datasets/load.py:1454: FutureWarning: The repository for tau/scrolls contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/tau/scrolls
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Size of the train set: 753. Size of the validation set: 26
+Before packing, Size of the train set: 950. Size of the validation set: 33
+Size of the train set: 753. Size of the validation set: 26
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): LlamaForCausalLM(
+      (model): LlamaModel(
+        (embed_tokens): Embedding(32000, 8192, padding_idx=0)
+        (layers): ModuleList(
+          (0-79): 80 x LlamaDecoderLayer(
+            (self_attn): LlamaAttention(
+              (q_proj): Linear(in_features=8192, out_features=8192, bias=False)
+              (k_proj): Linear(in_features=8192, out_features=1024, bias=False)
+              (v_proj): Linear(in_features=8192, out_features=1024, bias=False)
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=8192, out_features=8192, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=8192, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=8192, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (rotary_emb): LlamaRotaryEmbedding()
+            )
+            (mlp): LlamaMLP(
+              (gate_proj): Linear(in_features=8192, out_features=28672, bias=False)
+              (up_proj): Linear(in_features=8192, out_features=28672, bias=False)
+              (down_proj): Linear(in_features=28672, out_features=8192, bias=False)
+              (act_fn): SiLU()
+            )
+            (input_layernorm): LlamaRMSNorm()
+            (post_attention_layernorm): LlamaRMSNorm()
+          )
+        )
+        (norm): LlamaRMSNorm()
+      )
+      (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+    )
+  )
+)
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+prepare all done!
+trainable params: 20,971,520 || all params: 68,997,619,712 || trainable%: 0.03039455576516454
+prepare all done!
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+mll zero 3
+Parameter Offload: Total persistent parameters: 1318912 in 161 params
+  0%|          | 0/800 [00:00<?, ?it/s]/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/maliangl/miniconda3/envs/ft/lib/python3.9/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|          | 1/800 [00:41<9:12:08, 41.46s/it]  0%|          | 2/800 [01:08<7:19:23, 33.04s/it]                                                 {'loss': 1.3946, 'learning_rate': 0.0004999922894111975, 'epoch': 0.02}
+  0%|          | 2/800 [01:08<7:19:23, 33.04s/it]  0%|          | 3/800 [01:35<6:43:32, 30.38s/it]  0%|          | 4/800 [02:03<6:26:35, 29.14s/it]                                                 {'loss': 1.2893, 'learning_rate': 0.0004999691581204152, 'epoch': 0.04}
+  0%|          | 4/800 [02:03<6:26:35, 29.14s/it]  1%|          | 5/800 [02:30<6:17:07, 28.46s/it]  1%|          | 6/800 [02:57<6:11:17, 28.06s/it]                                                 {'loss': 1.3366, 'learning_rate': 0.0004999306075545002, 'epoch': 0.06}
+  1%|          | 6/800 [02:57<6:11:17, 28.06s/it]  1%|          | 7/800 [03:24<6:07:26, 27.80s/it]  1%|          | 8/800 [03:52<6:04:38, 27.62s/it]                                                 {'loss': 1.3164, 'learning_rate': 0.0004998766400914329, 'epoch': 0.08}
+  1%|          | 8/800 [03:52<6:04:38, 27.62s/it]  1%|          | 9/800 [04:19<6:02:42, 27.51s/it]  1%|▏         | 10/800 [04:46<6:01:10, 27.43s/it]                                                  {'loss': 1.2405, 'learning_rate': 0.0004998072590601808, 'epoch': 0.11}
+  1%|▏         | 10/800 [04:46<6:01:10, 27.43s/it]  1%|▏         | 11/800 [05:13<6:00:08, 27.39s/it]  2%|▏         | 12/800 [05:41<5:59:07, 27.34s/it]                                                  {'loss': 1.3696, 'learning_rate': 0.0004997224687404926, 'epoch': 0.13}
+  2%|▏         | 12/800 [05:41<5:59:07, 27.34s/it]  2%|▏         | 13/800 [06:08<5:58:20, 27.32s/it]  2%|▏         | 14/800 [06:35<5:57:37, 27.30s/it]                                                  {'loss': 1.301, 'learning_rate': 0.0004996222743626345, 'epoch': 0.15}
+  2%|▏         | 14/800 [06:35<5:57:37, 27.30s/it]  2%|▏         | 15/800 [07:02<5:57:03, 27.29s/it]  2%|▏         | 16/800 [07:30<5:56:29, 27.28s/it]                                                  {'loss': 1.3876, 'learning_rate': 0.0004995066821070679, 'epoch': 0.17}
+  2%|▏         | 16/800 [07:30<5:56:29, 27.28s/it]  2%|▏         | 17/800 [07:57<5:56:01, 27.28s/it]  2%|▏         | 18/800 [08:24<5:55:34, 27.28s/it]                                                  {'loss': 1.2419, 'learning_rate': 0.0004993756991040675, 'epoch': 0.19}
+  2%|▏         | 18/800 [08:24<5:55:34, 27.28s/it]  2%|▏         | 19/800 [08:52<5:55:15, 27.29s/it]  2%|▎         | 20/800 [09:19<5:54:52, 27.30s/it]                                                  {'loss': 1.3157, 'learning_rate': 0.000499229333433282, 'epoch': 0.21}
+  2%|▎         | 20/800 [09:19<5:54:52, 27.30s/it]  3%|▎         | 21/800 [09:46<5:54:31, 27.31s/it]  3%|▎         | 22/800 [10:14<5:54:03, 27.31s/it]                                                  {'loss': 1.2771, 'learning_rate': 0.0004990675941232354, 'epoch': 0.23}
+  3%|▎         | 22/800 [10:14<5:54:03, 27.31s/it]  3%|▎         | 23/800 [10:41<5:53:38, 27.31s/it]  3%|▎         | 24/800 [11:08<5:53:06, 27.30s/it]                                                  {'loss': 1.1956, 'learning_rate': 0.00049889049115077, 'epoch': 0.25}
+  3%|▎         | 24/800 [11:08<5:53:06, 27.30s/it]  3%|▎         | 25/800 [11:35<5:52:35, 27.30s/it]  3%|▎         | 26/800 [12:03<5:51:57, 27.28s/it]                                                  {'loss': 1.341, 'learning_rate': 0.0004986980354404316, 'epoch': 0.27}
+  3%|▎         | 26/800 [12:03<5:51:57, 27.28s/it]  3%|▎         | 27/800 [12:30<5:51:29, 27.28s/it]  4%|▎         | 28/800 [12:57<5:50:59, 27.28s/it]                                                  {'loss': 1.2804, 'learning_rate': 0.0004984902388637949, 'epoch': 0.29}
+  4%|▎         | 28/800 [12:57<5:50:59, 27.28s/it]  4%|▎         | 29/800 [13:24<5:50:23, 27.27s/it]  4%|▍         | 30/800 [13:52<5:49:52, 27.26s/it]                                                  {'loss': 1.2101, 'learning_rate': 0.0004982671142387316, 'epoch': 0.32}
+  4%|▍         | 30/800 [13:52<5:49:52, 27.26s/it]  4%|▍         | 31/800 [14:19<5:49:27, 27.27s/it]  4%|▍         | 32/800 [14:46<5:49:00, 27.27s/it]                                                  {'loss': 1.2796, 'learning_rate': 0.0004980286753286195, 'epoch': 0.34}
+  4%|▍         | 32/800 [14:46<5:49:00, 27.27s/it]  4%|▍         | 33/800 [15:14<5:48:39, 27.27s/it]  4%|▍         | 34/800 [15:41<5:48:11, 27.27s/it]                                                  {'loss': 1.3184, 'learning_rate': 0.0004977749368414937, 'epoch': 0.36}
+  4%|▍         | 34/800 [15:41<5:48:11, 27.27s/it]  4%|▍         | 35/800 [16:08<5:47:51, 27.28s/it]  4%|▍         | 36/800 [16:35<5:47:30, 27.29s/it]                                                  {'loss': 1.2951, 'learning_rate': 0.0004975059144291394, 'epoch': 0.38}
+  4%|▍         | 36/800 [16:36<5:47:30, 27.29s/it]  5%|▍         | 37/800 [17:03<5:47:22, 27.32s/it]  5%|▍         | 38/800 [17:30<5:46:50, 27.31s/it]                                                  {'loss': 1.2847, 'learning_rate': 0.0004972216246861262, 'epoch': 0.4}
+  5%|▍         | 38/800 [17:30<5:46:50, 27.31s/it]  5%|▍         | 39/800 [17:57<5:46:25, 27.31s/it]  5%|▌         | 40/800 [18:25<5:45:54, 27.31s/it]                                                  {'loss': 1.2721, 'learning_rate': 0.0004969220851487844, 'epoch': 0.42}
+  5%|▌         | 40/800 [18:25<5:45:54, 27.31s/it]  5%|▌         | 41/800 [18:52<5:45:23, 27.30s/it]  5%|▌         | 42/800 [19:19<5:44:52, 27.30s/it]                                                  {'loss': 1.3016, 'learning_rate': 0.0004966073142941239, 'epoch': 0.44}
+  5%|▌         | 42/800 [19:19<5:44:52, 27.30s/it]  5%|▌         | 43/800 [19:47<5:44:17, 27.29s/it]  6%|▌         | 44/800 [20:14<5:43:44, 27.28s/it]                                                  {'loss': 1.3338, 'learning_rate': 0.0004962773315386935, 'epoch': 0.46}
+  6%|▌         | 44/800 [20:14<5:43:44, 27.28s/it]  6%|▌         | 45/800 [20:41<5:43:17, 27.28s/it]  6%|▌         | 46/800 [21:08<5:42:45, 27.27s/it]                                                  {'loss': 1.2635, 'learning_rate': 0.000495932157237384, 'epoch': 0.48}
+  6%|▌         | 46/800 [21:08<5:42:45, 27.27s/it]  6%|▌         | 47/800 [21:36<5:42:18, 27.28s/it]  6%|▌         | 48/800 [22:03<5:41:48, 27.27s/it]                                                  {'loss': 1.2807, 'learning_rate': 0.0004955718126821722, 'epoch': 0.51}
+  6%|▌         | 48/800 [22:03<5:41:48, 27.27s/it]  6%|▌         | 49/800 [22:30<5:41:25, 27.28s/it]  6%|▋         | 50/800 [22:57<5:41:00, 27.28s/it]                                                  {'loss': 1.2887, 'learning_rate': 0.0004951963201008077, 'epoch': 0.53}
+  6%|▋         | 50/800 [22:58<5:41:00, 27.28s/it]  6%|▋         | 51/800 [23:25<5:40:40, 27.29s/it]  6%|▋         | 52/800 [23:52<5:40:11, 27.29s/it]                                                  {'loss': 1.2901, 'learning_rate': 0.0004948057026554415, 'epoch': 0.55}
+  6%|▋         | 52/800 [23:52<5:40:11, 27.29s/it]  7%|▋         | 53/800 [24:19<5:39:48, 27.29s/it]  7%|▋         | 54/800 [24:47<5:39:25, 27.30s/it]                                                  {'loss': 1.2915, 'learning_rate': 0.0004943999844411977, 'epoch': 0.57}
+  7%|▋         | 54/800 [24:47<5:39:25, 27.30s/it]  7%|▋         | 55/800 [25:14<5:39:03, 27.31s/it]  7%|▋         | 56/800 [25:41<5:38:39, 27.31s/it]                                                  {'loss': 1.2609, 'learning_rate': 0.0004939791904846869, 'epoch': 0.59}
+  7%|▋         | 56/800 [25:41<5:38:39, 27.31s/it]  7%|▋         | 57/800 [26:09<5:38:11, 27.31s/it]  7%|▋         | 58/800 [26:36<5:37:35, 27.30s/it]                                                  {'loss': 1.2869, 'learning_rate': 0.0004935433467424624, 'epoch': 0.61}
+  7%|▋         | 58/800 [26:36<5:37:35, 27.30s/it]  7%|▋         | 59/800 [27:03<5:37:04, 27.29s/it]  8%|▊         | 60/800 [27:30<5:36:29, 27.28s/it]                                                  {'loss': 1.292, 'learning_rate': 0.0004930924800994192, 'epoch': 0.63}
+  8%|▊         | 60/800 [27:30<5:36:29, 27.28s/it]  8%|▊         | 61/800 [27:58<5:35:56, 27.28s/it]  8%|▊         | 62/800 [28:25<5:35:25, 27.27s/it]                                                  {'loss': 1.3084, 'learning_rate': 0.0004926266183671356, 'epoch': 0.65}
+  8%|▊         | 62/800 [28:25<5:35:25, 27.27s/it]  8%|▊         | 63/800 [28:52<5:34:57, 27.27s/it]  8%|▊         | 64/800 [29:20<5:34:34, 27.28s/it]                                                  {'loss': 1.3054, 'learning_rate': 0.0004921457902821578, 'epoch': 0.67}
+  8%|▊         | 64/800 [29:20<5:34:34, 27.28s/it]  8%|▊         | 65/800 [29:47<5:34:08, 27.28s/it]  8%|▊         | 66/800 [30:14<5:33:44, 27.28s/it]                                                  {'loss': 1.3449, 'learning_rate': 0.0004916500255042268, 'epoch': 0.69}
+  8%|▊         | 66/800 [30:14<5:33:44, 27.28s/it]  8%|▊         | 67/800 [30:41<5:33:23, 27.29s/it]  8%|▊         | 68/800 [31:09<5:33:00, 27.30s/it]                                                  {'loss': 1.3022, 'learning_rate': 0.0004911393546144495, 'epoch': 0.72}
+  8%|▊         | 68/800 [31:09<5:33:00, 27.30s/it]  9%|▊         | 69/800 [31:36<5:32:38, 27.30s/it]  9%|▉         | 70/800 [32:03<5:32:07, 27.30s/it]                                                  {'loss': 1.2467, 'learning_rate': 0.0004906138091134118, 'epoch': 0.74}
+  9%|▉         | 70/800 [32:03<5:32:07, 27.30s/it]  9%|▉         | 71/800 [32:31<5:31:34, 27.29s/it]  9%|▉         | 72/800 [32:58<5:31:00, 27.28s/it]                                                  {'loss': 1.2518, 'learning_rate': 0.0004900734214192358, 'epoch': 0.76}
+  9%|▉         | 72/800 [32:58<5:31:00, 27.28s/it]  9%|▉         | 73/800 [33:25<5:30:32, 27.28s/it]  9%|▉         | 74/800 [33:52<5:29:54, 27.27s/it]                                                  {'loss': 1.2879, 'learning_rate': 0.0004895182248655798, 'epoch': 0.78}
+  9%|▉         | 74/800 [33:52<5:29:54, 27.27s/it]  9%|▉         | 75/800 [34:20<5:29:26, 27.26s/it] 10%|▉         | 76/800 [34:47<5:29:01, 27.27s/it]                                                  {'loss': 1.2477, 'learning_rate': 0.0004889482536995825, 'epoch': 0.8}
+ 10%|▉         | 76/800 [34:47<5:29:01, 27.27s/it] 10%|▉         | 77/800 [35:14<5:28:36, 27.27s/it] 10%|▉         | 78/800 [35:41<5:28:13, 27.28s/it]                                                  {'loss': 1.3095, 'learning_rate': 0.0004883635430797502, 'epoch': 0.82}
+ 10%|▉         | 78/800 [35:41<5:28:13, 27.28s/it] 10%|▉         | 79/800 [36:09<5:27:53, 27.29s/it] 10%|█         | 80/800 [36:36<5:27:23, 27.28s/it]                                                  {'loss': 1.3679, 'learning_rate': 0.0004877641290737884, 'epoch': 0.84}
+ 10%|█         | 80/800 [36:36<5:27:23, 27.28s/it] 10%|█         | 81/800 [37:03<5:26:58, 27.29s/it] 10%|█         | 82/800 [37:31<5:26:27, 27.28s/it]                                                  {'loss': 1.2415, 'learning_rate': 0.0004871500486563761, 'epoch': 0.86}
+ 10%|█         | 82/800 [37:31<5:26:27, 27.28s/it] 10%|█         | 83/800 [37:58<5:25:59, 27.28s/it] 10%|█         | 84/800 [38:25<5:25:24, 27.27s/it]                                                  {'loss': 1.2721, 'learning_rate': 0.00048652133970688633, 'epoch': 0.88}
+ 10%|█         | 84/800 [38:25<5:25:24, 27.27s/it] 11%|█         | 85/800 [38:52<5:24:55, 27.27s/it] 11%|█         | 86/800 [39:20<5:24:24, 27.26s/it]                                                  {'loss': 1.2503, 'learning_rate': 0.0004858780410070484, 'epoch': 0.91}
+ 11%|█         | 86/800 [39:20<5:24:24, 27.26s/it] 11%|█         | 87/800 [39:47<5:23:57, 27.26s/it] 11%|█         | 88/800 [40:14<5:23:27, 27.26s/it]                                                  {'loss': 1.2931, 'learning_rate': 0.0004852201922385564, 'epoch': 0.93}
+ 11%|█         | 88/800 [40:14<5:23:27, 27.26s/it] 11%|█         | 89/800 [40:41<5:23:04, 27.26s/it] 11%|█▏        | 90/800 [41:09<5:22:37, 27.26s/it]                                                  {'loss': 1.3589, 'learning_rate': 0.0004845478339806211, 'epoch': 0.95}
+ 11%|█▏        | 90/800 [41:09<5:22:37, 27.26s/it] 11%|█▏        | 91/800 [41:36<5:22:14, 27.27s/it] 12%|█▏        | 92/800 [42:03<5:21:49, 27.27s/it]                                                  {'loss': 1.2558, 'learning_rate': 0.00048386100770746686, 'epoch': 0.97}
+ 12%|█▏        | 92/800 [42:03<5:21:49, 27.27s/it] 12%|█▏        | 93/800 [42:31<5:21:25, 27.28s/it] 12%|█▏        | 94/800 [42:58<5:21:01, 27.28s/it]                                                  {'loss': 1.2928, 'learning_rate': 0.0004831597557857735, 'epoch': 0.99}
+ 12%|█▏        | 94/800 [42:58<5:21:01, 27.28s/it] 12%|█▏        | 95/800 [43:25<5:20:39, 27.29s/it] 12%|█▏        | 96/800 [43:52<5:20:10, 27.29s/it]                                                  {'loss': 1.3125, 'learning_rate': 0.00048244412147206283, 'epoch': 1.01}
+ 12%|█▏        | 96/800 [43:52<5:20:10, 27.29s/it] 12%|█▏        | 97/800 [44:20<5:19:43, 27.29s/it] 12%|█▏        | 98/800 [44:47<5:19:12, 27.28s/it]                                                  {'loss': 1.2714, 'learning_rate': 0.0004817141489100302, 'epoch': 1.03}
+ 12%|█▏        | 98/800 [44:47<5:19:12, 27.28s/it] 12%|█▏        | 99/800 [45:14<5:18:41, 27.28s/it] 12%|█▎        | 100/800 [45:42<5:18:07, 27.27s/it]                                                   {'loss': 1.3265, 'learning_rate': 0.0004809698831278217, 'epoch': 1.05}
+ 12%|█▎        | 100/800 [45:42<5:18:07, 27.27s/it] 13%|█▎        | 101/800 [46:09<5:17:36, 27.26s/it] 13%|█▎        | 102/800 [46:36<5:17:06, 27.26s/it]                                                   {'loss': 1.1826, 'learning_rate': 0.0004802113700352566, 'epoch': 1.07}
+ 13%|█▎        | 102/800 [46:36<5:17:06, 27.26s/it] 13%|█▎        | 103/800 [47:03<5:16:43, 27.26s/it] 13%|█▎        | 104/800 [47:31<5:16:18, 27.27s/it]                                                   {'loss': 1.2491, 'learning_rate': 0.00047943865642099525, 'epoch': 1.09}
+ 13%|█▎        | 104/800 [47:31<5:16:18, 27.27s/it] 13%|█▎        | 105/800 [47:58<5:15:50, 27.27s/it] 13%|█▎        | 106/800 [48:25<5:15:28, 27.27s/it]                                                   {'loss': 1.257, 'learning_rate': 0.0004786517899496534, 'epoch': 1.12}
+ 13%|█▎        | 106/800 [48:25<5:15:28, 27.27s/it] 13%|█▎        | 107/800 [48:52<5:15:10, 27.29s/it] 14%|█▎        | 108/800 [49:20<5:14:44, 27.29s/it]                                                   {'loss': 1.2822, 'learning_rate': 0.0004778508191588613, 'epoch': 1.14}
+ 14%|█▎        | 108/800 [49:20<5:14:44, 27.29s/it] 14%|█▎        | 109/800 [49:47<5:14:19, 27.29s/it] 14%|█▍        | 110/800 [50:14<5:13:44, 27.28s/it]                                                   {'loss': 1.2921, 'learning_rate': 0.00047703579345627036, 'epoch': 1.16}
+ 14%|█▍        | 110/800 [50:14<5:13:44, 27.28s/it] 14%|█▍        | 111/800 [50:42<5:13:15, 27.28s/it] 14%|█▍        | 112/800 [51:09<5:12:37, 27.26s/it]                                                   {'loss': 1.2113, 'learning_rate': 0.0004762067631165049, 'epoch': 1.18}
+ 14%|█▍        | 112/800 [51:09<5:12:37, 27.26s/it] 14%|█▍        | 113/800 [51:36<5:12:08, 27.26s/it] 14%|█▍        | 114/800 [52:03<5:11:34, 27.25s/it]                                                   {'loss': 1.3066, 'learning_rate': 0.00047536377927806143, 'epoch': 1.2}
+ 14%|█▍        | 114/800 [52:03<5:11:34, 27.25s/it] 14%|█▍        | 115/800 [52:31<5:11:09, 27.25s/it] 14%|█▍        | 116/800 [52:58<5:10:42, 27.26s/it]                                                   {'loss': 1.2691, 'learning_rate': 0.0004745068939401539, 'epoch': 1.22}
+ 14%|█▍        | 116/800 [52:58<5:10:42, 27.26s/it] 15%|█▍        | 117/800 [53:25<5:10:19, 27.26s/it] 15%|█▍        | 118/800 [53:52<5:09:52, 27.26s/it]                                                   {'loss': 1.2251, 'learning_rate': 0.00047363615995950624, 'epoch': 1.24}
+ 15%|█▍        | 118/800 [53:52<5:09:52, 27.26s/it] 15%|█▍        | 119/800 [54:20<5:09:28, 27.27s/it] 15%|█▌        | 120/800 [54:47<5:09:03, 27.27s/it]                                                   {'loss': 1.2164, 'learning_rate': 0.00047275163104709196, 'epoch': 1.26}
+ 15%|█▌        | 120/800 [54:47<5:09:03, 27.27s/it] 15%|█▌        | 121/800 [55:14<5:08:46, 27.28s/it] 15%|█▌        | 122/800 [55:41<5:08:16, 27.28s/it]                                                   {'loss': 1.2115, 'learning_rate': 0.00047185336176482084, 'epoch': 1.28}
+ 15%|█▌        | 122/800 [55:42<5:08:16, 27.28s/it]srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 190360.0 ON compute41 CANCELLED AT 2024-02-29T01:33:00 DUE TO TIME LIMIT ***
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 146632 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 146633 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 146634 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 146635 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 146636 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 146637 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 146638 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 146639 RUNNING AT compute41
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================

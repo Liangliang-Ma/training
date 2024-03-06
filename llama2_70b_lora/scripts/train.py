@@ -54,8 +54,8 @@ class ScriptArguments:
     max_grad_norm: Optional[float] = field(default=0.0)
     weight_decay: Optional[float] = field(default=0.001)
     lora_alpha: Optional[int] = field(default=32)
-    lora_dropout: Optional[float] = field(default=0.1)
-    lora_r: Optional[int] = field(default=16)
+    lora_dropout: Optional[float] = field(default=0.1, metadata={"help": "lora dropout is a fixed to 0.1 in closed submission"})
+    lora_r: Optional[int] = field(default=16, metadata={"help": "lora rank is a fixed to 16 in closed submission"})
     lora_target_modules: Optional[str] = field(
         default=None,
         metadata={
@@ -166,7 +166,7 @@ def main(args):
         warmup_ratio=args.warmup_ratio,
         lr_scheduler_type=args.lr_scheduler_type,
         num_train_epochs=args.num_train_epochs,
-        evaluation_strategy="no",
+        evaluation_strategy="steps",
         save_strategy="no",
         max_steps=args.max_steps,
         eval_steps=args.eval_steps,
@@ -204,7 +204,7 @@ def main(args):
         args=training_arguments,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        # callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset))],
+        callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset),args.lora_alpha)],
     )
     trainer.accelerator.print(f"{trainer.model}")
     if args.use_peft_lora:
