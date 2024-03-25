@@ -6,8 +6,10 @@
         "enabled": true
     },
     "zero_optimization": {
-        "stage": 3
+        "stage": 3,
+        "stage3_gather_16bit_weights_on_model_save":true
     },
+    
     "gradient_accumulation_steps": "auto",
     "gradient_clipping": "auto",
     "steps_per_print": 2000,

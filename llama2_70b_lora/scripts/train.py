@@ -18,12 +18,15 @@ from typing import Optional
 
 from datasets import load_dataset
 from mlperf_logging_utils import LoraLogger, MLPerfCallback
-from transformers import HfArgumentParser, Trainer, TrainingArguments
+from transformers import HfArgumentParser, Trainer, TrainingArguments, AutoModelForCausalLM
 from utils import create_and_prepare_model, create_datasets, peft_module_casting_to_bf16
 
 import deepspeed
 from deepspeed.accelerator import get_accelerator
 import os 
+import torch
+from peft import PeftModel
+from peft import LoraConfig, get_peft_model
 
 # distributed setup
 local_rank = int(os.getenv("LOCAL_RANK", "0"))
@@ -183,6 +186,13 @@ def main(args):
     model, peft_config, tokenizer = create_and_prepare_model(args)
     model.config.use_cache = False
 
+    #load
+    # savelora_path = "/scratch/users/maliangl/save_lora"
+    # model.load_adapter(args.output_dir)
+    # model.enable_adapters()
+    
+    # model = PeftModel.from_pretrained(model, "./converge_home", is_trainable=True)
+
     # datasets
     ## ToDo uncomment once drive goes public
     # train_url = "https://drive.google.com/file/d/1-JgY1mEafcJ7qhggt6UR3OEKAciIPd5s/view?usp=sharing"
@@ -204,17 +214,69 @@ def main(args):
         args=training_arguments,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset),args.lora_alpha)],
+        # wtf="wtf"
+        # callbacks=[MLPerfCallback(loralogger, len(train_dataset), len(eval_dataset),args.lora_alpha)],
     )
     trainer.accelerator.print(f"{trainer.model}")
-    if args.use_peft_lora:
-        trainer.model.print_trainable_parameters()
+    # if args.use_peft_lora:
+    #     trainer.model.print_trainable_parameters()
 
     if args.use_peft_lora:
         peft_module_casting_to_bf16(trainer.model, args)
     print("prepare all done!")
     trainer.train()
 
+    # save_path = "/scratch/users/maliangl/save"
+    # # savelora_path = "/scratch/users/maliangl/save_lora_1"
+    
+    # # model.save_pretrained(save_path)
+    # merged_model = model.float32().merge_and_unload()
+    # merged_model.save_pretrained(save_path)
+    # model.save_pretrained(savelora_path, save_adapter=True, save_config=True)
+ 
+    # trainer.save_model(save_path) # will only save from the main process
+    # from deepspeed.utils.zero_to_fp32 import get_fp32_state_dict_from_zero_checkpoint
+    # from peft import get_peft_model_state_dict
+    # if local_rank == 0:
+    #     print(model.state_dict().keys())
+    #     if trainer.deepspeed and not os.path.exists(save_path + "/pytorch_model.bin"):
+    #         print("CONVERT Deepspeed Checkpoint to FP32")
+    #         state_dict = get_fp32_state_dict_from_zero_checkpoint(save_path) # already on cpu
+    #     else:
+    #         print("TRY to use the model directly")
+    #         state_dict = model.cpu().state_dict()
+    #     print("Number of elements in the state dict", sum(p.numel() for p in state_dict.values()))
+    #     d = get_peft_model_state_dict(model, state_dict=state_dict)
+
+    #     model.save_pretrained(savelora_path)
+    #     torch.save(d, savelora_path + "/adapter_model.bin")
+
+    # from deepspeed.utils import safe_get_full_fp32_param
+    # output_state_dict = {
+    #     k: safe_get_full_fp32_param(v).cpu() for k, v in model.named_parameters()
+    # }
+
+    # if get_local_rank() != 0:
+    #     return
+
+    # torch.save(output_state_dict, os.path.join(save_path, WEIGHTS_NAME))
+    # if trainer.args.process_index == 0:
+    trainer.accelerator.wait_for_everyone()
+    state_dict = trainer.accelerator.get_state_dict(trainer.deepspeed)
+    if trainer.accelerator.is_main_process:
+        unwrapped_model = trainer.accelerator.unwrap_model(
+            trainer.deepspeed
+        )
+        unwrapped_model.save_pretrained(args.output_dir, state_dict=state_dict)
+
+
+    print("save all done!")
+    # new_model, peft_config, tokenizer = create_and_prepare_model(args)
+    # # model = AutoModelForCausalLM.from_pretrained(save_path)
+    # model_to_merge = PeftModel.from_pretrained(new_model, savelora_path)
+    import datetime
+    datetime.datetime.now()
+    print("all done!!")
 
 if __name__ == "__main__":
     parser = HfArgumentParser(ScriptArguments)

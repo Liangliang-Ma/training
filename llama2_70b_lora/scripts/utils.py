@@ -136,7 +136,7 @@ def create_and_prepare_model(args):
         use_cache=not args.use_gradient_checkpointing,
         trust_remote_code=True,
         # attn_implementation="flash_attention_2",
-        attn_implementation="eager",
+        attn_implementation="sdpa",
         torch_dtype=torch.bfloat16,
         max_position_embeddings=8192,
     )
@@ -157,11 +157,12 @@ def create_and_prepare_model(args):
         )
         if args.use_gradient_checkpointing:
             model.gradient_checkpointing_enable()
+        # model.add_adapter(peft_config)
         model = get_peft_model(model, peft_config)
-        model.print_trainable_parameters()
+        # model.print_trainable_parameters()
 
     # return model
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained("/scratch/users/maliangl/Llama-2-70b-hf", trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
 
     return model, peft_config, tokenizer
