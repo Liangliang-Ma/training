@@ -7,7 +7,8 @@
     },
     "zero_optimization": {
         "stage": 3,
-        "stage3_gather_16bit_weights_on_model_save":true
+        "stage3_gather_16bit_weights_on_model_save":true,
+        "overlap_comm":true
     },
     
     "gradient_accumulation_steps": "auto",

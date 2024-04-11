@@ -17,7 +17,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from datasets import load_dataset
-from mlperf_logging_utils import LoraLogger, MLPerfCallback
+# from mlperf_logging_utils import LoraLogger, MLPerfCallback
 from transformers import HfArgumentParser, Trainer, TrainingArguments, AutoModelForCausalLM
 from utils import create_and_prepare_model, create_datasets, peft_module_casting_to_bf16
 
@@ -154,7 +154,7 @@ class ScriptArguments:
 
 
 def main(args):
-    loralogger = LoraLogger(target_eval_loss=args.target_eval_loss)
+    # loralogger = LoraLogger(target_eval_loss=args.target_eval_loss)
     training_arguments = TrainingArguments(
         output_dir=args.output_dir,
         per_device_train_batch_size=args.per_device_train_batch_size,

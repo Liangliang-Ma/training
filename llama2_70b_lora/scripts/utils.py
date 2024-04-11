@@ -162,7 +162,7 @@ def create_and_prepare_model(args):
         # model.print_trainable_parameters()
 
     # return model
-    tokenizer = AutoTokenizer.from_pretrained("/scratch/users/maliangl/Llama-2-70b-hf", trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
 
     return model, peft_config, tokenizer
